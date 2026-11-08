@@ -1,0 +1,20 @@
+// Only these sites are searched. Start small, widen if results come back empty.
+export const TRUSTED_DOMAINS = [
+  "developer.mozilla.org",
+  "stackoverflow.com",
+  "docs.python.org",
+  "react.dev",
+  "nodejs.org",
+  "vite.dev",
+  "w3schools.com",
+  "geeksforgeeks.org",
+  "cppreference.com",
+  "learn.microsoft.com",
+  "docs.oracle.com",
+  "postgresql.org",
+  "sqlite.org",
+  "git-scm.com",
+  "docs.github.com",
+  "realpython.com",
+  "freecodecamp.org",
+];
