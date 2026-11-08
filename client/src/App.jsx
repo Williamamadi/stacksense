@@ -20,7 +20,7 @@ export default function App() {
     setError("");
     setResult(null);
     try {
-      const res = await fetch("/api/ask", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ""}/api/ask`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
