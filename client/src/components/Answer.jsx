@@ -1,4 +1,7 @@
+import CodeBlock from "./CodeBlock.jsx";
+
 // Turns [1], [2] in the text into links to the matching source.
+
 function withCitations(text, sources) {
   return text.split(/(\[\d+\])/g).map((part, i) => {
     const m = part.match(/^\[(\d+)\]$/);
@@ -28,12 +31,9 @@ export default function Answer({ text, sources }) {
     <section className="answer">
       {parts.map((part, i) => {
         if (i % 2 === 1) {
-          return (
-            <pre key={i}>
-              <code>{part.trimEnd()}</code>
-            </pre>
-          );
-        }
+ return <CodeBlock key={i} code={part.trimEnd()} />;
+}
+        
         return part
           .split(/\n\s*\n/)
           .filter((p) => p.trim())

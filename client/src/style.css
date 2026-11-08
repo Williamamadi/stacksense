@@ -1,0 +1,18 @@
+.code-wrap { position: relative; margin: 0 0 1rem; }
+
+.code-wrap pre { margin: 0; padding-top: 2.4rem; }
+
+.copy-btn {
+
+  position: absolute; top: 0.5rem; right: 0.5rem;
+
+  padding: 0.25rem 0.7rem; font: 600 0.75rem "IBM Plex Sans", sans-serif;
+
+  color: var(--code-ink); background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 6px; cursor: pointer;
+
+}
+
+.copy-btn:hover { background: rgba(255, 255, 255, 0.22); }
+ 
